@@ -5,5 +5,6 @@ public class EndevinaNumero {
         // TODO: genera un número aleatori entre 1 i 10
         //   Demana a l'usuari que l'endevini
         //   Si l'encerta, felicita'l; si no, digues quin número era
+
     }
 }
