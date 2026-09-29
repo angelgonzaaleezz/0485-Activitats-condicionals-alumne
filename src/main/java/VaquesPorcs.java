@@ -26,10 +26,10 @@ double ppor= (porcs/total)*100;
     if (pvaq>ppor){
 System.out.println("Percentatge de vaques > Percentatge de porcs");
     }
-    if (pvaq==ppor){
+    else if (pvaq==ppor){
 System.out.println("Percentatge de vaques = Percentatge de porcs");
     }
-if (pvaq<ppor){
+    else  {
 System.out.println("Percentatge de vaques < Percentatge de porcs");
     }
 

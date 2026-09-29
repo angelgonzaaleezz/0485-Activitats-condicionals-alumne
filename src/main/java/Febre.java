@@ -19,7 +19,7 @@ public class Febre {
         
         }
         else{
-            System.out.println("Estas fresc com un enciam.");
+            System.out.println("Estas fresc com un enciam, a currar!");
         }
     }
 }

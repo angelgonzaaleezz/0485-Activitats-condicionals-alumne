@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class LoginUsuariPassword {
     public static void main(String[] args) {
         // Informació secreta
-        final String username = "cponts";
-        final String password = "qw34T1234";
+ String username = "cponts";
+ String password = "qw34T1234";
 
         // TODO: demana username i password per teclat
         //   Digues si són correctes o no
@@ -19,9 +19,10 @@ public class LoginUsuariPassword {
      System.out.println("Ingresa password: ");
     String pass=teclat.next();
 
-if(user=="cponts"){
-    if(pass=="qw34T1234"){
+if(user.equals(username)){
+    if(pass.equals(password)){
         System.out.println("TOT CORRECTE.");
+    
     }
     else{
         System.out.println("CONTRASENYA INCORRECTA");
