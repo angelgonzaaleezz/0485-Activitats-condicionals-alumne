@@ -26,6 +26,7 @@ la sortida coincideixi exactament amb cap exemple.
        javac -d target/classes src/main/java/*.java
        java -cp target/classes NomClasse
        ```
+
      (substitueix `NomClasse` pel nom de la classe que vulguis provar, per exemple `Febre`).
 4. Fes `commit` i `push` quan vulguis desar la teva feina (pots fer-ho tantes vegades
    com vulguis). No hi ha cap correcció automàtica: el professor revisarà el teu codi
@@ -34,39 +35,40 @@ la sortida coincideixi exactament amb cap exemple.
 
 ## Activitats (5 punts cadascuna · total 135)
 
-| #  | Classe | Puntuació |
-|----|--------|-----------|
-| 01 | `Febre` | 5 |
-| 02 | `ParellSenar` | 5 |
-| 03 | `VaquesPorcs` | 5 |
-| 04 | `NotaUF` | 5 |
-| 05 | `AccesPerHora` | 5 |
-| 06 | `RectangleQuadrat` | 5 |
-| 07 | `DivisioGranPetit` | 5 |
-| 08 | `PositiuNegatiuZero` | 5 |
-| 09 | `AccesDiaHora` | 5 |
-| 10 | `CaixerComissio` | 5 |
-| 11 | `PreuEntradaCinema` | 5 |
-| 12 | `MesGranDeTres` | 5 |
-| 13 | `IMC` | 5 |
-| 14 | `EntreU10Parell` | 5 |
-| 15 | `SouAntiguitat` | 5 |
-| 16 | `DescompteTrams` | 5 |
-| 17 | `QualificacioNota` | 5 |
-| 18 | `EndevinaNumero` | 5 |
-| 19 | `ApostaAB` | 5 |
-| 20 | `LoginUsuariPassword` | 5 |
-| 21 | `PedraPaperTisora` | 5 |
-| 22 | `NomDelMes` | 5 |
-| 23 | `DiesDelMes` | 5 |
-| 24 | `SignesZodiac` | 5 |
-| 25 | `OperacionsExcepcions` | 5 |
-| 26 | `PositiuNegatiuZeroExcepcions` | 5 |
-| 27 | `MonedesMinimesCondicional` | 5 |
+| #  | Classe                           | Puntuació |
+| -- | -------------------------------- | ---------- |
+| 01 | `Febre`                        | 5          |
+| 02 | `ParellSenar`                  | 5          |
+| 03 | `VaquesPorcs`                  | 5          |
+| 04 | `NotaUF`                       | 5          |
+| 05 | `AccesPerHora`                 | 5          |
+| 06 | `RectangleQuadrat`             | 5          |
+| 07 | `DivisioGranPetit`             | 5          |
+| 08 | `PositiuNegatiuZero`           | 5          |
+| 09 | `AccesDiaHora`                 | 5          |
+| 10 | `CaixerComissio`               | 5          |
+| 11 | `PreuEntradaCinema`            | 5          |
+| 12 | `MesGranDeTres`                | 5          |
+| 13 | `IMC`                          | 5          |
+| 14 | `EntreU10Parell`               | 5          |
+| 15 | `SouAntiguitat`                | 5          |
+| 16 | `DescompteTrams`               | 5          |
+| 17 | `QualificacioNota`             | 5          |
+| 18 | `EndevinaNumero`               | 5          |
+| 19 | `ApostaAB`                     | 5          |
+| 20 | `LoginUsuariPassword`          | 5          |
+| 21 | `PedraPaperTisora`             | 5          |
+| 22 | `NomDelMes`                    | 5          |
+| 23 | `DiesDelMes`                   | 5          |
+| 24 | `SignesZodiac`                 | 5          |
+| 25 | `OperacionsExcepcions`         | 5          |
+| 26 | `PositiuNegatiuZeroExcepcions` | 5          |
+| 27 | `MonedesMinimesCondicional`    | 5          |
 
 ## Enunciats
 
 ### 01 — Febre (`Febre`)
+
 Entra un número real per teclat i digues si tens febre o no (considerem que hi ha
 febre per sobre de 37°C).
 
@@ -77,6 +79,7 @@ Tens febre, has d'anar cap a casa a descansar!!
 ```
 
 ### 02 — Parell o senar (`ParellSenar`)
+
 Entra un número enter per teclat i digues si és parell o és senar.
 Recorda: `7 % 2 = 1` (senar), `8 % 2 = 0` (parell).
 
@@ -87,6 +90,7 @@ El número és senar
 ```
 
 ### 03 — Vaques i porcs (`VaquesPorcs`)
+
 Entra per teclat el número de vaques i el número de porcs que hi ha en una granja.
 Calcula el percentatge de vaques i el de porcs, mostra'ls per pantalla i digues quin
 és el percentatge més gran.
@@ -101,6 +105,7 @@ Hi ha més porcs que vaques!
 ```
 
 ### 04 — Nota d'una UF (`NotaUF`)
+
 Entra per teclat la nota de les activitats d'una UF i la nota de les proves. La nota
 de les activitats és un 10% de la nota de la UF; la de les proves, un 90%. Has aprovat
 si la mitjana ponderada és superior o igual a 5.
@@ -115,15 +120,19 @@ Has aprovat la UF!
 ```
 
 ### 05 — Accés per hora (`AccesPerHora`)
+
 Escriu un programa que mostri el text "Pots accedir" únicament si hem passat de les 8
 del matí. Ajuda:
+
 ```java
 Calendar calendar = Calendar.getInstance();
 int hour = calendar.get(Calendar.HOUR_OF_DAY);
 ```
+
 > Aquesta activitat depèn de l'hora real de l'ordinador, no té una sortida fixa per provar.
 
 ### 06 — Rectangle o quadrat (`RectangleQuadrat`)
+
 Partint del valor dels dos costats d'un rectangle, entrats per teclat, calcula'n el
 perímetre i l'àrea, i mostra també si es tracta d'un quadrat o no.
 
@@ -143,6 +152,7 @@ No és un quadrat
 ```
 
 ### 07 — Dividir el més gran entre el més petit (`DivisioGranPetit`)
+
 Entra per teclat 2 números diferents i mostra el resultat de dividir el més gran entre
 el més petit.
 
@@ -161,6 +171,7 @@ El resultat de dividir 20 entre 4 és: 5.0
 ```
 
 ### 08 — Positiu, negatiu o zero (`PositiuNegatiuZero`)
+
 Demana un nombre enter i digues si és positiu, negatiu o zero.
 
 ```
@@ -170,10 +181,12 @@ El número és negatiu
 ```
 
 ### 09 — Accés per dia i hora (`AccesDiaHora`)
+
 Escriu un programa que permeti executar les instruccions únicament si no és dissabte,
 no és diumenge, i són passades les 8 del matí. Resol-ho amb **condicionals aniuades**.
 
 Missatges de sortida:
+
 - `NO pots entrar: és dissabte!`
 - `No pots entrar: és diumenge!`
 - `No pots entrar: Encara no són es 08:00 hores!`
@@ -183,6 +196,7 @@ Missatges de sortida:
 > per provar.
 
 ### 10 — Caixer, comissió i saldo (`CaixerComissio`)
+
 Escriu un programa que demani el saldo actual del compte, la quantitat que es vol
 treure, i si es fa servir un caixer propi (S/N). Si s'usa un caixer d'un altre banc,
 s'aplica una comissió del 5% sobre la quantitat a retirar. Calcula l'import final a
@@ -203,10 +217,12 @@ No es pot fer la retirada. Saldo insuficient.
 ```
 
 ### 11 — Preu d'una entrada de cinema (`PreuEntradaCinema`)
+
 L'entrada normal val 5€ un dia laborable i un 10% més en cap de setmana. Els que tenen
 carnet jove tenen un descompte addicional del 15%. Pregunta si es tracta d'un dia
 laborable (L) o de cap de setmana (C), i si el client té Carnet Jove (S/N). Ajuda per
 llegir una lletra:
+
 ```java
 char lletra;
 Scanner teclat = new Scanner(System.in);
@@ -224,6 +240,7 @@ El preu de l'entrada és: 4.68 €
 ```
 
 ### 12 — El més gran de tres (`MesGranDeTres`)
+
 Entra 3 números per teclat i mostra quin és el més gran de tots tres.
 
 ```
@@ -237,9 +254,11 @@ El número més gran és: 9
 ```
 
 ### 13 — Índex de massa corporal (`IMC`)
+
 Demana l'altura en centímetres i el pes en quilograms. Calcula l'IMC amb la fórmula de
 l'OMS: `IMC = pes / altura²` (altura en metres). Mostra el valor de l'IMC i la
 classificació:
+
 - Menys de 18.5 → Pes insuficient
 - 18.5 – 24.9 → Pes normal
 - 25.0 – 29.9 → Sobrepès
@@ -253,6 +272,7 @@ Classificació (OMS): Pes normal
 ```
 
 ### 14 — Entre 1 i 10 i parell (`EntreU10Parell`)
+
 Demana un nombre enter i digues si està entre 1 i 10 i, a més, és parell. Resol-ho amb
 estructura **if-else aniuada**.
 
@@ -263,6 +283,7 @@ El número està entre 1 i 10 i és parell
 ```
 
 ### 15 — Sou i antiguitat (`SouAntiguitat`)
+
 D'un operari se'n coneix el sou i els anys d'antiguitat. Llegeix les dades i:
 a) Si el sou és inferior a 500 i l'antiguitat és igual o superior a 10 anys, augment del 20%.
 b) Si el sou és inferior a 500 però l'antiguitat és menor a 10 anys, augment del 5%.
@@ -277,7 +298,9 @@ El sou a pagar és: 540.0
 ```
 
 ### 16 — Descompte per trams (`DescompteTrams`)
+
 Introdueix una quantitat N i resta-li un descompte segons el tram:
+
 - `n < 500` → 5%
 - `500 <= n < 1000` → 8%
 - `1000 <= n <= 5000` → 15%
@@ -290,6 +313,7 @@ El resultat és: 736.0
 ```
 
 ### 17 — Qualificació d'una nota (`QualificacioNota`)
+
 Entra una nota numèrica real entre 0 i 10 i mostra la qualificació: Excel·lent (9-10),
 Notable (7-8.9), Bé (6-6.9), Suficient (5-5.9) o Insuficient (menys de 5). Si el número
 no està entre 0 i 10, mostra "La nota ha de ser entre 0 i 10".
@@ -303,6 +327,7 @@ Notable
 ```
 
 ### 18 — Endevina el número (`EndevinaNumero`)
+
 Genera un número aleatori entre 1 i 10. Demana un número a l'usuari i digues si l'ha
 endevinat. Si no l'endevina, informa'l del número que s'havia generat.
 
@@ -311,9 +336,11 @@ Endevina el número que he pensat (està entre 1 i 10!):
 5
 Ho sento, havia generat el número 3!
 ```
+
 > Aquesta activitat fa servir `Random`, no té una sortida fixa per provar.
 
 ### 19 — Aposta A o B (`ApostaAB`)
+
 Tria dos números enters aleatoris A i B, sense mostrar-los encara. Pregunta per qui
 aposta l'usuari (guanya el número més alt). Un cop apostat, mostra el valor d'A i B i
 digues si s'ha guanyat o perdut.
@@ -322,9 +349,11 @@ digues si s'ha guanyat o perdut.
 Apostes per A o per B ? : A
 A treu un 9 i B treu un 6 HAS GUANYAT!!!
 ```
+
 > Aquesta activitat fa servir `Random`, no té una sortida fixa per provar.
 
 ### 20 — Login amb usuari i contrasenya (`LoginUsuariPassword`)
+
 En dues variables del programa es guarden el `username` i el `password` d'un usuari
 (`cponts` / `qw34T1234`). Demana per teclat el nom d'usuari i la contrasenya, i digues
 si són correctes.
@@ -338,6 +367,7 @@ Usuari i contrasenya correctes!
 ```
 
 ### 21 — Pedra, paper o tisora (`PedraPaperTisora`)
+
 Implementa el joc contra l'ordinador: les tisores tallen el paper, el paper embolica la
 pedra, la pedra esclafa les tisores. Si els dos jugadors treuen el mateix, empat.
 L'ordinador tria a l'atzar (0=pedra, 1=paper, 2=tisora); l'usuari entra "pedra",
@@ -349,15 +379,18 @@ pedra
 Ordinador ha tret: pedra
 Heu empatat!!
 ```
+
 ```
 Entra pedra, paper o tisora:
 pedra
 Ordinador ha tret: paper
 Has perdut!
 ```
+
 > Aquesta activitat fa servir `Random`, no té una sortida fixa per provar.
 
 ### 22 — Nom del mes (`NomDelMes`)
+
 Per practicar l'estructura `switch`: introdueix un valor numèric entre 1 i 12 (un mes
 de l'any) i mostra'n el nom. Detecta els errors (números fora de rang).
 
@@ -368,8 +401,10 @@ Abril
 ```
 
 ### 23 — Dies del mes (`DiesDelMes`)
+
 Introdueix un valor numèric entre 1 i 12 i mostra els dies que té aquell mes (febrer:
 28 dies). Detecta els errors. Amb `switch` es poden agrupar casos:
+
 ```java
 switch (mes) {
     case 1: case 3: case 5: case 7: case 8: case 10: case 12:
@@ -386,11 +421,12 @@ Aquest mes té 28 dies
 ```
 
 ### 24 — Signes del zodíac (`SignesZodiac`)
-| Foc | Terra | Aire | Aigua |
-|---|---|---|---|
-| 1. Àries | 2. Capricorn | 3. Balança | 4. Cranc |
-| 5. Lleó | 6. Taure | 7. Aquari | 8. Escorpió |
-| 9. Sagitari | 10. Verge | 11. Bessons | 12. Peixos |
+
+| Foc         | Terra        | Aire        | Aigua        |
+| ----------- | ------------ | ----------- | ------------ |
+| 1. Àries   | 2. Capricorn | 3. Balança | 4. Cranc     |
+| 5. Lleó    | 6. Taure     | 7. Aquari   | 8. Escorpió |
+| 9. Sagitari | 10. Verge    | 11. Bessons | 12. Peixos   |
 
 a) Mostra el llistat dels signes del zodíac amb els seus números associats.
 b) Demana per teclat un número associat a un signe.
@@ -408,8 +444,10 @@ Categoria: Foc
 ```
 
 ### 25 — Operacions aritmètiques amb excepcions (`OperacionsExcepcions`)
+
 Realitza les operacions aritmètiques fonamentals (suma, resta, multiplicació i
 divisió) de 2 valors enters, controlant les possibles excepcions:
+
 - l'usuari no introdueix el tipus de dada esperat pel programa;
 - el segon operand és zero.
 
@@ -434,6 +472,7 @@ Error: no es pot dividir per zero
 ```
 
 ### 26 — Positiu, negatiu o zero, amb excepcions (`PositiuNegatiuZeroExcepcions`)
+
 Com l'activitat 08, però controlant amb `try`/`catch` que l'usuari introdueixi el
 tipus de dada esperat.
 
@@ -446,6 +485,7 @@ Error: has d'introduir un número enter
 ```
 
 ### 27 — Monedes mínimes (`MonedesMinimesCondicional`)
+
 Demana una quantitat entera de diners (en cèntims d'euro, ha de ser ≥ 0) i mostra la
 quantitat mínima de monedes necessària per lliurar-la (1, 2, 5, 10, 20, 50, 100 i 200
 cèntims). Mostra només les línies amb quantitat més gran que zero.
