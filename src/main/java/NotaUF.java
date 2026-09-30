@@ -16,7 +16,7 @@ double np= teclat.nextDouble();
 double nf= (na*0.1)+(np*0.9);
 
 System.out.println("La teva nota es: "+nf);
-if(nf>5){
+if(nf>=5){
     System.out.println("Has aprobat!");
 }
 else{

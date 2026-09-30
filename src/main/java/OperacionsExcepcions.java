@@ -25,19 +25,18 @@ public class OperacionsExcepcions {
             return;
         }
         
-        
-            sum = num1+num2;
-            res = num1-num2;
-            mult = num1*num2;
-            try {
+                
+        sum = num1+num2;
+        res = num1-num2;
+        mult = num1*num2;
+        System.out.println(num1 + " + " + num2 + " = " + sum);
+        System.out.println(num1 + " - " + num2 + " = " + res);
+        System.out.println(num1 + " * " + num2 + " = " + mult);
+        try {
             div = num1/num2;
+            System.out.println(num1 + " / " + num2 + " = " + div);
         } catch (Exception e) {
-            System.out.println("Error: No es pot dividir entre 0!");
-            return;
-        }
-        System.out.println("Suma:" + num1 + "+" + num2 + "=" + sum);
-        System.out.println("Resta:" + num1 + "-" + num2 + "=" + res);
-        System.out.println("Multiplicació:" + num1 + "*" + num2 + "=" + mult);
-        System.out.println("Divisió:" + num1 + "/" + num2 + "=" + div);
+            System.out.println("Error: no es pot dividir per zero");
     }
-}
+    }
+    }

@@ -12,14 +12,21 @@ public class AccesDiaHora {
         int dia = calendar.get(Calendar.DAY_OF_WEEK);
         int hora = calendar.get(Calendar.HOUR_OF_DAY);
         System.out.println("Verificant acces...");
-        if (dia == Calendar.SATURDAY) {
-            System.out.println("No pots entrar: és dissabte!");
-        } else if (dia == Calendar.SUNDAY) {
-            System.out.println("No pots entrar: és diumenge!");
-        } else if (hora < 8) {
-            System.out.println("No pots entrar: Encara no són es 08:00 hores!");
+     if (dia != Calendar.SATURDAY) {
+            if (dia != Calendar.SUNDAY) {
+                if (hora >= 8) {
+                    System.out.println("Benvingut a l'aplicació!!");
+                } else {
+                    System.out.println("No pots entrar: Encara no són es 08:00 hores!");
+                }
+            } else {
+                System.out.println("No pots entrar: és diumenge!");
+            }
         } else {
-            System.out.println("Benvingut a l'aplicació!!");
+            System.out.println("NO pots entrar: és dissabte!");
         }
     }
 }
+        
+    
+

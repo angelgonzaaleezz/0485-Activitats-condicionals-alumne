@@ -11,9 +11,9 @@ public class DivisioGranPetit {
         //   Si no, mostra el resultat de dividir el gran entre el petit
         Scanner teclat= new Scanner(System.in);
         System.out.println("Introdueix un numero: ");
-        int num1 = teclat.nextInt();
+        double num1 = teclat.nextDouble();
         System.out.println("Introdueix un altre numero: ");
-        int num2= teclat.nextInt();
+        double num2= teclat.nextDouble();
 
         if(num1==num2){
             System.out.println("Han de ser numeros diferents!");

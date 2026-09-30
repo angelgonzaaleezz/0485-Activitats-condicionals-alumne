@@ -12,7 +12,7 @@ public class PedraPaperTisora {
         Scanner teclat=new Scanner(System.in);
         Random numero =new Random();
 
-        System.out.println("Introdueix Pedra, Paper o Pissores:");
+        System.out.println("Introdueix Pedra, Paper o Tissores:");
         String esc=teclat.next();
         int numa = numero.nextInt(1,4);
     //1=tissores

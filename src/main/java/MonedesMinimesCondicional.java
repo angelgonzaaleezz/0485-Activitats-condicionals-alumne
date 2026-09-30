@@ -11,11 +11,12 @@ public class MonedesMinimesCondicional {
 System.out.println("Introdueix cenitms:");
 int cent=teclat.nextInt();
 int dos=cent/200;
+if(cent>=0){
 if(dos != 0){
 System.out.println(dos+" monedes de 2 euros");
 }
 int un=(cent%200)/100;
-if(cent != 0){
+if(un != 0){
 System.out.println(un+" monedes d'1 euro");
 }
 int cincua=((cent%200)%100)/50;
@@ -41,6 +42,10 @@ System.out.println(duos+" moneda de 2 cèntims");
 int uno=(((((((cent%200)%100)%50)%20)%10)%5)%2);
 if(uno != 0){
 System.out.println(uno+" moneda de 1 cèntims");
+}
+}
+else{
+System.out.println("La quantitat ha de ser >= 0");
 }
 
     }

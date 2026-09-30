@@ -12,7 +12,7 @@ public class AccesPerHora {
         Calendar calendar = Calendar.getInstance();
         System.out.println("Verificant acces...");
         int hora= calendar.get(Calendar.HOUR_OF_DAY);
-        if(hora>8){
+        if(hora>=8){
             System.out.println("Tens acces.");
 
         }

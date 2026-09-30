@@ -21,7 +21,7 @@ double pvaq= (vaques/total)*100;
 double ppor= (porcs/total)*100;
 
     System.out.println("Percentatge de vaques: "+ pvaq + "%");
-    System.out.println("Percentatge de vaques: "+ ppor + "%");
+    System.out.println("Percentatge de porcs: "+ ppor + "%");
 
     if (pvaq>ppor){
 System.out.println("Percentatge de vaques > Percentatge de porcs");
