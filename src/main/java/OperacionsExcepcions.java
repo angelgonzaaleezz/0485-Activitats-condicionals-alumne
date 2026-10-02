@@ -1,4 +1,5 @@
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 // Activitat 25 — Operacions aritmètiques amb control d'excepcions
@@ -20,8 +21,8 @@ public class OperacionsExcepcions {
         System.out.println("Introdueix un altre numero enter: ");
         num2=teclat.nextInt();
         }
-        catch (Exception e){
-            System.out.println("Error: Introdueix un numero enter.");
+        catch (InputMismatchException e){
+            System.out.println("Error de format de numero: Introdueix un numero enter.");
             return;
         }
         
@@ -35,8 +36,8 @@ public class OperacionsExcepcions {
         try {
             div = num1/num2;
             System.out.println(num1 + " / " + num2 + " = " + div);
-        } catch (Exception e) {
-            System.out.println("Error: no es pot dividir per zero");
+        } catch (ArithmeticException e) {
+            System.out.println("Error aritmetic: no es pot dividir per zero");
     }
     }
     }
