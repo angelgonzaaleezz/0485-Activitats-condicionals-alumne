@@ -10,18 +10,15 @@ public class SignesZodiac {
         //   c) Amb un switch, mostra la categoria (Foc, Terra, Aire o Aigua)
         //   Si el número no correspon a cap signe: "ERROR: <número> no associat a cap signe."
         Scanner teclat = new Scanner(System.in);
-        System.out.println("1. Àries");
-        System.out.println("2. Capricorn");
-        System.out.println("3. Balança");
-        System.out.println("4. Cranc");
-        System.out.println("5. Lleó");
-        System.out.println("6. Taure");
-        System.out.println("7. Aquari");
-        System.out.println("8. Escorpió");
-        System.out.println("9. Sagitari");
-        System.out.println("10. Verge");
-        System.out.println("11. Bessons");
-        System.out.println("12. Peixos");
+        System.out.println("|  --------------------------------------------- |");
+        System.out.println("|  1. Àries   |   2. Capricorn   |   3. Balança  |");
+        System.out.println("|  -----------+------------------+-------------- |");
+        System.out.println("|  4. Cranc   |   5. Lleó        |   6. Taure    |");
+        System.out.println("|  -----------+------------------+-------------- |");
+        System.out.println("|  7. Aquari  |   8. Escorpió    |   9. Sagitari |");
+        System.out.println("|  -----------+------------------+-------------- |");
+        System.out.println("|  10. Verge  |   11. Bessons    |   12. Peixos  |");
+        System.out.println("|  --------------------------------------------- |");
         System.out.println("Introdueix el numero d' un signe del zodiac: ");
         int signe=teclat.nextInt();
         switch(signe){
